@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHANTOM</title>
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            background-color: #040404; 
+            color: #ffffff; 
+            font-family: Arial, sans-serif;
+        }
+
+        .logo-container {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .logo {
+            max-width: 100%;
+            height: 35;
+        }
+        .video-container {
+            margin: 20px;
+            position: relative;
+            width: 640px;
+            height: 360px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .fade-in-text {
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+       
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .menu-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    z-index: 3;
+}
+
+
+        .menu-container {
+    position: fixed;
+    top: 0;
+    left: -300px; 
+    height: 100%;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: left 0.5s ease-in-out; 
+    z-index: 1;
+    overflow-y: auto;
+    backdrop-filter: blur(10px);
+}
+
+.menu-container.open {
+    left: 0; 
+}
+
+        .menu-items {
+            padding: 20px;
+        }
+
+        .menu-item {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .menu-item a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .menu-item:hover {
+            color: #ffd700;
+        }
+
+        .menu-button:hover {
+            color: #ffd700;
+        }
+        .styled-button {
+            background-color: #fafafa; 
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            font-size: 16px; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+            
+        }
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            color: #ffffff;
+            text-decoration: underline;
+            margin-bottom: 5px;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        p {
+            text-align: justify;
+            display: inline-block;
+            color: #555;
+            margin: 10px 0;
+        }
+    </style>
+    <script>
+      function toggleMenu() {
+          const menuContainer = document.getElementById('menuContainer');
+          menuContainer.classList.toggle('open');
+      }
+  </script>
+</head>
+<body>
+      <div class="header">
+        <div class="logo-container">
+          <a href="finalweb1 main.html" ><img class="logo" src="https://i.postimg.cc/0Q2wxy9G/0-PHANTOM-OD-1.png" alt="Logo" height=25></a>
+        </div>
+
+        <div class="menu-button" onclick="toggleMenu()">☰</div>
+    </div>
+    <div class="menu-container" id="menuContainer">
+        <div class="menu-items">
+          <div class="menu-item">                 </a></div>
+          <div class="menu-item">&nbsp;&nbsp;&nbsp;</a></div>
+          <div class="menu-item"><a href="finalweb1 main.html">Home</a></div>
+          <div class="menu-item"><a href="models.html">Models</a></div>
+          <div class="menu-item"><a href="about us.html">About Us</a></div>
+          <div class="menu-item"><a href="lifestyle.html">Lifestyle</a></div>
+          <div class="menu-item"><a href="contact.html">Contact</a></div>
+        </div>
+    </div><br>
+    <br>
+       <div align="center">
+    <img class="fade-in-text" src="https://i.postimg.cc/WbZHRJ0g/aero.jpg" height="400"></div>
+    <h3 class="fade-in-text" style="font-family: sans-serif; text-align: center;">Phantom Aerosonic</h3>
+        <h3 class="fade-in-text"  style="text-align: justify; text-align: center;">Propelled by a state-of-the-art engine that unleashes breathtaking speeds, ensuring an exhilarating driving experience that pushes the boundaries of what a luxury car can achieve.</h3>
+        <br>
+        <br>
+        <br>
+        <body>
+
+            <h2>Powertrain and Engine Specifications:</h2>
+    <table>
+        <tr>
+            <td>Engine Type:</td>
+            <td>V6 Turbocharged</td>
+        </tr>
+        <tr>
+            <td>Displacement:</td>
+            <td>3,000 cc</td>
+        </tr>
+        <tr>
+            <td>Aspiration:</td>
+            <td>Turbocharged</td>
+        </tr>
+        <tr>
+            <td>Compression Ratio:</td>
+            <td>10.0:1</td>
+        </tr>
+        <tr>
+            <td>Fuel Delivery:</td>
+            <td>Direct Fuel Injection</td>
+        </tr>
+    </table>
+
+    <h2>Performance Metrics:</h2>
+    <table>
+        <tr>
+            <td>Horsepower:</td>
+            <td>400 HP</td>
+        </tr>
+        <tr>
+            <td>Torque:</td>
+            <td>500 Nm</td>
+        </tr>
+        <tr>
+            <td>Acceleration (0-60 mph):</td>
+            <td>5.0 seconds</td>
+        </tr>
+        <tr>
+            <td>Top Speed:</td>
+            <td>150 mph</td>
+        </tr>
+    </table>
+
+    <h2>Transmission and Drivetrain:</h2>
+    <table>
+        <tr>
+            <td>Transmission Type:</td>
+            <td>8-Speed Automatic</td>
+        </tr>
+        <tr>
+            <td>Gear Ratios:</td>
+            <td>
+                1st: 4.70 <br>
+                2nd: 3.20 <br>
+                3rd: 2.50 <br>
+                4th: 1.80
+            </td>
+        </tr>
+        <tr>
+            <td>Drivetrain:</td>
+            <td>All-Wheel Drive (AWD)</td>
+        </tr>
+    </table>
+
+    <h2>Chassis and Suspension Details:</h2>
+    <table>
+        <tr>
+            <td>Chassis Type:</td>
+            <td>Monocoque Construction</td>
+        </tr>
+        <tr>
+            <td>Suspension System:</td>
+            <td>Independent Multi-Link (Front and Rear)</td>
+        </tr>
+        <tr>
+            <td>Shock Absorbers:</td>
+            <td>Electronic Adaptive Damping System</td>
+        </tr>
+        <tr>
+            <td>Braking System:</td>
+            <td>Ventilated Disc Brakes (Front and Rear)</td>
+        </tr>
+    </table>
+
+    <h2>Exterior Features:</h2>
+    <table>
+        <tr>
+            <td>Body Material:</td>
+            <td>Aluminum Alloy</td>
+        </tr>
+        <tr>
+            <td>Exterior Dimensions:</td>
+            <td>
+                Length: 4,950 mm <br>
+                Width: 1,900 mm <br>
+                Height: 1,450 mm
+            </td>
+        </tr>
+        <tr>
+            <td>Aerodynamics:</td>
+            <td>Sleek and Streamlined Design with Integrated Spoiler</td>
+        </tr>
+    </table>
+        </body>
+        <br>
+        <br>
+        <section align="center" class="contact-form">
+            <form class="contact-form">
+        <input type="submit" class="styled-button" value="BOOK YOUR PHANTOM">
+            </form>
+        </section>
+
+<p align="center">
+  <a href="#Top"><b ><img src="https://i.postimg.cc/63MFcNw5/download.png" height="20"></b></a>
+</p>
+
+<h5 align="center"> ©2024 Phantom India- Nolksagen Motors India Private Limited - India. All rights reserved.</h5>
+</body>
+</html>

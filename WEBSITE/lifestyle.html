@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHANTOM</title>
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            background-color: #040404; 
+            color: #ffffff; 
+            font-family: Arial, sans-serif;
+        }
+
+        .logo-container {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .logo {
+            max-width: 100%;
+            height: 35;
+        }
+        .video-container {
+            margin: 20px;
+            position: relative;
+            width: 640px;
+            height: 360px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .fade-in-text {
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+       
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .menu-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    z-index: 3;
+}
+
+
+        .menu-container {
+    position: fixed;
+    top: 0;
+    left: -300px; 
+    height: 100%;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: left 0.5s ease-in-out; 
+    z-index: 1;
+    overflow-y: auto;
+    backdrop-filter: blur(10px);
+}
+
+.menu-container.open {
+    left: 0; 
+}
+
+        .menu-items {
+            padding: 20px;
+        }
+
+        .menu-item {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .menu-item a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .menu-item:hover {
+            color: #ffd700;
+        }
+
+        .menu-button:hover {
+            color: #ffd700;
+        }
+        .styled-button {
+            background-color: #700378; 
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+            
+        }
+        
+    </style>
+    <script>
+      function toggleMenu() {
+          const menuContainer = document.getElementById('menuContainer');
+          menuContainer.classList.toggle('open');
+      }
+  </script>
+</head>
+<body>
+      <div class="header">
+        <div class="logo-container">
+          <a href="finalweb1 main.html" ><img class="logo" src="https://i.postimg.cc/0Q2wxy9G/0-PHANTOM-OD-1.png" alt="Logo" height=25></a>
+        </div>
+
+        <div class="menu-button" onclick="toggleMenu()">☰</div>
+    </div>
+    <div class="menu-container" id="menuContainer">
+        <div class="menu-items">
+          <div class="menu-item">                 </a></div>
+          <div class="menu-item">&nbsp;&nbsp;&nbsp;</a></div>
+          <div class="menu-item"><a href="finalweb1 main.html">Home</a></div>
+          <div class="menu-item"><a href="models.html">Models</a></div>
+          <div class="menu-item"><a href="about us.html">About Us</a></div>
+          <div class="menu-item"><a href="lifestyle.html">Lifestyle</a></div>
+          <div class="menu-item"><a href="contact.html">Contact</a></div>
+        </div>
+    </div><br>
+      
+  
+  <br>
+
+    <br>
+    <h2 align="center"> LIFESTYLE</h2>
+    <table width="100%" border="0" cellspacing="0">
+      <tr>
+        <td>
+          <table width="85%" border="0" align="center">
+            <tr>
+
+              <br>
+              <td width="1%"></td>
+              <td>
+                <figure>
+                  <img
+                    src="https://i.postimg.cc/Gm3rcCdc/pexels-cottonbro-studio-8388337.jpg"
+                    width="200"
+                  />
+                  <p>&nbsp;</p>
+                  <img
+                  src="https://i.postimg.cc/sx6FxBVs/pexels-erik-mclean-5864163.jpg"
+                  width="200"
+                />
+                 
+                </figure>
+              </td>
+              <td>
+                <h3 align="center">In the realm of late-night luxury lifestyles, the presence of Phantom cars transcends the conventional boundaries of transportation, becoming synonymous with sophistication, opulence, and an unparalleled sense of exclusivity.</h3>
+              </td>
+            </tr>
+          </table>
+        </td>
+        
+      </tr>
+    </table>
+    
+    <table width="100%" border="0" cellspacing="0">
+        <tr>
+          <td>
+            <table width="85%" border="0" align="center">
+              <tr>
+  
+                <br>
+                <td>
+                    <h3 align="center">Within the sphere of cutting-edge automotive design, Phantom cars redefine the standard parameters of mobility, embodying innovation, elegance, and an incomparable aura of exclusivity.</h3>
+                  </td>
+                <td width="1%"></td>
+                
+                <td>
+                  <figure>
+                    
+                    <p>&nbsp;</p>
+                    <img
+                    src="https://i.postimg.cc/fy0nrzcK/pexels-erik-mclean-5158108.jpg"
+                    alt="2"
+                    width="200"/>
+                    <p>&nbsp;</p>
+
+                    <img
+                    src="https://i.postimg.cc/vHhT7XmZ/pexels-aleksandar-pasaric-3048529.jpg"
+                    alt="1"
+                    width="200"/> 
+                  
+                   
+                  </figure>
+                </td>
+               
+              </tr>
+            </table>
+          </td>
+          
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0">
+        <tr>
+          <td>
+            <table width="85%" border="0" align="center">
+              <tr>
+  
+                <br>
+                <td width="1%"></td>
+                <td>
+                  <figure>
+  
+                    <p>&nbsp;</p>
+                    <img
+                    src="https://i.postimg.cc/wM3LKPMF/pexels-erik-mclean-5214413.jpg"
+                    alt="3"
+                    width="200"
+                  />
+                   
+                  </figure>
+                </td>
+                <td>
+                  <h3 align="center">An escape from the hustle of the day into a world where the road unfolds like a cinematic narrative. The quietude amplifies the elegance of Phantom's design, creating an atmosphere where the marriage of luxury and serenity is palpable.</h3>
+                </td>
+              </tr>
+            </table>
+          </td>
+          
+        </tr>
+      </table>
+<br>
+<h2 align="center"> BOOK A RIDE</h2>
+
+<table width="80%">
+  <tr>
+    <td width="10%"></td>
+    <td width="10%"></td>
+    <td width="10%"></td>
+    
+    <td>
+    <P>&nbsp;</P>
+    <section class="contact-form">
+      <form class="contact-form">
+          <label for="name" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Name:&nbsp;</label>
+          <input type="text" id="name" name="name" required ><br><br>
+          <label for="email " style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Email:&nbsp;</label>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="name" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Phone No:&nbsp;</label>
+          <input type="text" id="name" name="name" required ><br><br>
+          <input type="submit" class="styled-button" value="Submit">
+          
+             
+            
+
+      </form>
+  </section>
+  <td><img src="https://i.postimg.cc/zDyBK2Dk/pexels-erik-mclean-5158122.jpg" height="120"></td>
+</td>
+</tr>
+
+</table>
+<p align="center">
+  <a href="#Top"><b ><img src="https://i.postimg.cc/63MFcNw5/download.png" height="20"></b></a>
+</p>
+<h5 align="center"> ©2024 Phantom India- Nolksagen Motors India Private Limited - India. All rights reserved.</h5>
+</body>
+</html>
